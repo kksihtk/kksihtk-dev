@@ -1,0 +1,266 @@
+/* Basic */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Jura;
+}
+
+#page {
+    color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  ::-webkit-scrollbar {
+    background-color: #1D1C1C;
+  }
+
+  ::-webkit-scrollbar-thumb, 
+  ::-webkit-scrollbar-corner, 
+  ::-webkit-scrollbar-button {
+    background-color: #313131;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #141414;
+  }
+
+  ::selection {
+    background: #CE3E1E; /* Safari */
+    color: #141414;
+    }
+
+/* Header */
+
+#header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    color: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 0;
+    font-size: 28px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #EDEDED;
+    transition: .1s;
+    margin-left: -8%;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+#nav {
+    width: 30%;
+}
+
+#nav ul {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+}
+
+#nav ul li {
+    padding: 0 5%;
+    margin: 0;
+}
+
+#nav ul li a {
+    color: #EDEDED;
+    text-decoration: none;
+    transition: .05s;
+}
+
+#nav ul li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #CE3E1E;
+}
+
+#nav ul li select:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #CE3E1E;
+}
+
+.a_current {
+    border-bottom: 3px solid #CE3E1E;
+}
+
+#nav ul li select{
+    font-size: 28px;
+    color: #EDEDED;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#nav ul li select option{
+    font-size: 28px;
+    color: black;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.lang-selector:hover select {
+    color: black;
+    
+}
+
+/* Last article */
+
+#back_article {
+    width: 80%;
+    padding: 20% 10% 10% 10%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#back_article span:first-child {
+    font-size: 22px;
+}
+
+#back_article span {
+    font-size: 18px;
+}
+
+#back_article h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.button {
+    margin: 10px 0;
+    width: fit-content;
+    padding: .2% 1%;
+    background-color: #CE3E1E;
+    transition: .1s;
+}
+
+.button:hover {
+    transform:scale(1.1)
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #EDEDED;    
+}
+
+#clouds {
+    background-color: #1D1C1C;
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cloud {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.cloud img {
+    width: 30%;
+    transition: 500ms;
+}
+
+.cloud img:hover {
+    width: 30%;
+    transform: scale(1.1);
+}
+
+.cloud-text {
+    padding: 5% 11%;
+}
+
+.cloud-text h3 {
+    font-size: 27px;
+}
+
+.cloud-text p {
+    font-size: 22px;
+}
+
+.second_cloud {
+    flex-direction: row-reverse;
+}
+
+#newsletter {
+    background-color: #1D1C1C;
+    padding: 5% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newsletter-header {
+    background-color: #313131;
+    padding: 2% 20%;
+}
+
+.newsletter-header h3 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.newsletter-form {
+    margin-top: 2%;
+    background-color: #3F3F3F;
+    padding: 2% 5%;
+}
+
+.newsletter-form form input {
+    background-color: #6B6B6B;
+    padding: 1%;
+    width: 75%;
+    outline: 0;
+    font-size: 18px;
+    color: #EDEDED;
+}
+
+.newsletter-form form input::placeholder {
+    color: #1f1f1f;
+}
+
+.newsletter-form form button {
+    background-color: #CE3E1E;
+    color: #fff;
+    padding: 1%;
+    width: 19%;
+    font-size: 18px;
+}
+
+#footer {
+    padding: 2%;
+    background-color: #222121;
+    text-align: center;
+}
+
+.footer-logo span{
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+#footer #nav, #footer #nav ul li {
+    margin: 1% auto;
+}
+
+#footer #nav ul li a {
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#footer p {
+    color: #747474;
+}
