@@ -1,0 +1,86 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    color: #EDEDED;
+    font-size: 28px;
+    padding: 2% 10%;
+    width: 80%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #EDEDED;
+    transition: .1s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+#nav {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#nav ul {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+}
+
+#nav ul li {
+    padding: 0 5%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#nav ul li a {
+    color: #EDEDED;
+    text-decoration: none;
+    transition: .05s;
+}
+
+#nav ul li a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #CE3E1E;
+}
+
+#nav ul li select:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #CE3E1E;
+}
+
+.a_current {
+    border-bottom: 3px solid #CE3E1E;
+}
+
+.lang-selector {
+    font-size: 28px;
+    color: #EDEDED;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.lang-selector option{
+    font-size: 28px;
+    color: black;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.lang-selector:hover select {
+    color: black;
+    
+}

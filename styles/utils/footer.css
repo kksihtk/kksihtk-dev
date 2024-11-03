@@ -1,0 +1,23 @@
+#footer {
+    padding: 2%;
+    background-color: #222121;
+    text-align: center;
+}
+
+.footer-logo span{
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+#footer #nav, #footer #nav ul li {
+    margin: 1% auto;
+}
+
+#footer #nav ul li a {
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+#footer p {
+    color: #747474;
+}

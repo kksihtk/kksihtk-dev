@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./scripts/indexInit/initIndexHead.js"></script>
+</head> 
+<body>
+
+    <script src="./scripts/utils/header.js"></script>
+    <script src="./scripts/utils/nav.js"></script>
+    <script src="./scripts/utils/selector.js"></script>
+    <script src="./scripts/utils/backArticle.js"></script>
+    <script src="./scripts/utils/clouds.js"></script>
+    <script src="./scripts/utils/newsletter.js"></script>
+    <script src="./scripts/utils/footer.js"></script>
+    
+    <section id="page">
+        <section id="page-content">
+            <script>
+                let pageContent = document.getElementById('page-content')
+
+                document.getElementById('page').appendChild(elementHeader())
+                
+                pageContent.appendChild(elementBackArticle(
+                    date = "1 january 2024",
+                    ButtonLinkText = "Details>>",
+                    ButtonLink = "#",
+                    Header2Text = "Extensions, for whom?",
+                    HeaderText = "Last news",
+                    imagePath = "./images/lastarticle.png"
+                ))
+
+                pageContent.appendChild(elementClouds())
+                
+                pageContent.appendChild(elementBackArticle(date = "1 january 2024",
+                ButtonLinkText = "Details>>",
+                ButtonLink = "#",
+                Header2Text = "kksihtk, autobiography",
+                HeaderText = "Recomended",
+                imagePath = "./images/back_article-biography.png"
+                ))
+
+                pageContent.appendChild(elementNewsletter())
+                pageContent.appendChild(elementFooter())
+            </script>
+        </section>
+    </section>
+    <script src="./scripts/handlers/handlerSelector.js"></script>
+    <script>
+        document.getElementById("lang-selector").addEventListener("change", eventHandlerSelectChange)
+    </script>
+</body>
+</html>
+

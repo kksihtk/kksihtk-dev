@@ -1,0 +1,33 @@
+/* Basic */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Jura;
+}
+
+#page {
+    color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    background-color: #1D1C1C;
+}
+
+::-webkit-scrollbar-thumb, 
+::-webkit-scrollbar-corner, 
+::-webkit-scrollbar-button {
+    background-color: #313131;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #141414;
+}
+
+::selection {
+    background: #CE3E1E; /* Safari */
+    color: #141414;
+}
